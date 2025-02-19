@@ -3,187 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Land Notary </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: transparent;
-            padding: 0;
-            text-align: center;
-            animation: fadeInDown 1s;
-        }
-
-        header img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        h1, p {
-            display: none;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation: fadeInUp 1s;
-        }
-
-        .social-links {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .social-links img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-links img:hover {
-            transform: scale(1.1);
-        }
-
-        .contact-form label, .contact-form input, .contact-form textarea {
-            display: block;
-            width: calc(100% - 12px);
-            margin-bottom: 10px;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form textarea {
-            height: 120px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            background-color: #333;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            margin-top: auto;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-        }
-
-        #image-slider {
-            width: 500px;
-            height: 300px;
-            overflow: hidden;
-            margin: 20px auto;
-            position: relative;
-        }
-
-        #image-slider img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        #image-slider img.active {
-            opacity: 1;
-        }
-    </style>
+    <title>Land Notary Services - Veteran-Owned Mobile & Remote Notary</title>
+    <meta name="description" content="Veteran-owned mobile notary and remote online notary services in Lancaster, Kentucky.">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-
     <header>
-        <img src="LandNotary.jpg" alt="Land's Market Logo">
+        <div class="container">
+            <a href="#home" class="logo"><img src="LandNotary.jpg" alt="Land Notary Services Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">Book Your Notary Now</a>
+        </div>
     </header>
 
-    <section>
-        <h2>Welcome!</h2>
-        <p>We offer a wide range of laser engraving services, from personalized gifts to custom signage. Contact us today to discuss your project!</p>
-        <img src="laser_engraving_example.jpg" alt="Example of Laser Engraving" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Veteran-Owned Mobile & Remote Notary Services in Lancaster, KY</h1>
+            <h2>Trustworthy, Convenient, Secure</h2>
+            <a href="#contact" class="cta-button">Schedule a Notary</a>
+        </div>
     </section>
 
-    <section id="image-slider">
-        <img src="pictures/image1.jpg" alt="Image 1" class="active">
-        <img src="pictures/image2.jpg" alt="Image 2">
-        <img src="pictures/image3.jpg" alt="Image 3">
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <img src="path-to-mobile-notary-icon.png" alt="Mobile Notary Icon">
+                <h3>Mobile Notary</h3>
+                <p>We come to you for notarization needs.</p>
+            </div>
+            <div class="service-item">
+                <img src="path-to-online-notary-icon.png" alt="Remote Online Notary Icon">
+                <h3>Remote Online Notary</h3>
+                <p>Get your documents notarized from anywhere.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="mailto:landsmarketky@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+    <section id="about" class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="path-to-team-photo-or-owner.png" alt="Team Photo">
+                <div class="text">
+                    <p><strong>Mission Statement:</strong> Dedicated to providing secure and accessible notary services with the integrity and reliability only a veteran can deliver.</p>
+                    <p><strong>Our Story:</strong> We started Land Notary Services to bring convenience and trust to document notarization, inspired by the values of integrity and service from our military background.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="social-links">
-        <a href="https://www.facebook.com/LandsNotary" target="_blank">
-            <img src="facebook.png" alt="Facebook">
-        </a>
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <!-- Placeholder for testimonials carousel -->
+                <div class="testimonial">
+                    <p>"Fast, reliable, and professional!"</p>
+                    <span>- John Doe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Lancaster, KY</p>
+                <p>Phone: (859) 329-9214</p>
+                <p>Email: land_notary@outlook.com</p>
+                <a href="https://www.facebook.com/LandsNotary/" target="_blank">Visit us on <i>Facebook</i></a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        &copy; 2023 Land's Market
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Land Notary Services. All rights reserved.</p>
+            <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+        </div>
     </footer>
 
-    <script>
-        const sliderImages = document.querySelectorAll('#image-slider img');
-        let currentImage = 0;
-
-        function changeImage() {
-            sliderImages[currentImage].classList.remove('active');
-            currentImage = (currentImage + 1) % sliderImages.length;
-            sliderImages[currentImage].classList.add('active');
-        }
-
-        setInterval(changeImage, 3000); // Change image every 3 seconds
-    </script>
-
+    <script src="path-to-your-javascript-file.js"></script>
 </body>
 </html>
